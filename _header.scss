@@ -1,11 +1,11 @@
 @use 'fonts';
 @use 'main';
 
-@mixin transform($property) {
+/*@mixin transform($property) {
 	-webkit-transform: $property;
     -ms-transform: $property;
     transform: $property;
-}
+}    -------------------------Can't get this to work */
 
 header {
     max-width: 81%;
@@ -46,10 +46,21 @@ li a {
     line-height: 23px;
     letter-spacing: -0.346154px;
     text-decoration: none;
+    width: 100%;
 
-    &:hover {
-        @include transform(scale(1.2))
-    }
+    /*&:hover {
+        @include transform(scale(1.2));
+    } 
+    -------------------------Can't get this to work */
+}
+
+.zoom {
+    transition: transform .2s;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
 }
 
 .intro-container {
