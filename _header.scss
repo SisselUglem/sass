@@ -1,0 +1,55 @@
+@use 'fonts';
+@use 'main';
+
+@mixin transform($property) {
+	-webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
+.header {
+    max-width: 81%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__branding {
+        display: flex;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+}
+
+li a {
+    font-family: fonts.$main-font;
+    color: main.$main-txt-color;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+
+    &:hover {
+        @include transform(scale(1.2))
+    }
+}
+
+.intro-container {
+    max-width: 81%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        max-width: 57%;
+        justify-content: flex-start;
+    }
+}

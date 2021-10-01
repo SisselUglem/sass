@@ -1,0 +1,12 @@
+@use 'fonts';
+
+@import 'header';
+@import 'main';
+
+body {
+    font-family: fonts.$main-font;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
