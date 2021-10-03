@@ -5,25 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8c2d0c6396.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_index.css">
+    <link rel="stylesheet" href="styles/css/_index.css">
+    <link rel="stylesheet" href="styles/css/reset.css">
     <title>Sass</title>
 </head>
 <body>
     <header>
         <div class="header">
             <div class="header__branding">
-                <img class="zoom" src="assets/Logo.svg" alt="Logotype" title="Genesis logotype">
+                <a href="index.html">
+                    <img class="zoom" src="assets/Logo.svg" alt="Logotype" title="Genesis logotype">
+                </a>
             </div>
             <nav>
                 <ul class="header__nav">
-                    <li><a class="zoom" href="#">Projekts</a></li>
-                    <li><a class="zoom" href="#">Contact</a></li>
+                    <li class="zoom"><a href="pages/projekts.html">Projekts</a></li>
+                    <li class="zoom"><a href="pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="intro-container">
-            <div class="intro__article">
+            <div class="intro__article animate__animated animate__fadeInLeft">
                 <h2>Shooting Stars</h2>
                 <h1>Hello, I’m Bakhtiyar Sattarov,
                     <span class="h1-intro">product designer</span> with experience
@@ -39,10 +43,10 @@
         </div>
     </header>
     <main>
-        <section class="gallery">
+        <div class="gallery">
             <div class="gallery__col">
                 <div class="gallery-item item-1">
-                    <img class="gallery__img" src="assets/gallery/Rectangle-1.png" alt="Statue in color" title="Statue">
+                    <img class="zoom gallery__img" src="assets/gallery/Rectangle-1.png" alt="Statue in color" title="Statue">
                 </div>
                 <div class="gallery-item item-2">
                     <img class="gallery__img" src="assets/gallery/Rectangle2.png" alt="A man sitting on a cactus" title="Cactus">
@@ -82,7 +86,7 @@
                     <img class="gallery__img" src="assets/gallery/Rectangle12.png" alt="Island" title="Island">
                 </div>
             </div>
-        </section>
+        </div>
         <section class="service">
             <div class="service__container">
                 <div class="service-intro">
@@ -170,8 +174,8 @@
             </div>
             <nav>
                 <ul class="footer__nav">
-                    <li><a class="zoom" href="#">Projekts</a></li>
-                    <li><a class="zoom" href="#">Contact</a></li>
+                    <li class="zoom"><a href="pages/projekts.html">Projekts</a></li>
+                    <li class="zoom"><a href="pages/contact.html">Contact</a></li>
                 </ul>
                 <div class="social__container">
                     <i class="zoom fab fa-dribbble"><a href="#"></a></i>
